@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800" fill="none">
+  <defs>
+    <linearGradient id="arch" x1="120" y1="160" x2="480" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EDE3D6"/>
+      <stop offset="1" stop-color="#D6C3AC"/>
+    </linearGradient>
+    <linearGradient id="figure" x1="300" y1="270" x2="300" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3D352D"/>
+      <stop offset="1" stop-color="#1B1815"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="392" y1="330" x2="470" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0B489" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#E0B489" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="collar" x1="240" y1="640" x2="360" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4A4036"/>
+      <stop offset="1" stop-color="#2A251F"/>
+    </linearGradient>
+  </defs>
+
+  <!-- editorial arch backdrop -->
+  <path d="M110 800V340C110 235.1 195.1 150 300 150C404.9 150 490 235.1 490 340V800H110Z" fill="url(#arch)" opacity="0.55"/>
+  <path d="M110 800V340C110 235.1 195.1 150 300 150C404.9 150 490 235.1 490 340V800" stroke="#BFA98F" stroke-opacity="0.45"/>
+  <path d="M84 800V340C84 220.7 180.7 124 300 124C419.3 124 516 220.7 516 340V800" stroke="#CBB9A3" stroke-opacity="0.25"/>
+
+  <!-- shoulders -->
+  <path d="M64 800C76 672 160 604 300 604C440 604 524 672 536 800H64Z" fill="url(#figure)"/>
+
+  <!-- neck -->
+  <path d="M255 505H345V598C345 628 325 648 300 648C275 648 255 628 255 598V505Z" fill="#2C2620"/>
+
+  <!-- head -->
+  <path d="M300 268C240 268 200 324 200 402C200 483 244 548 300 548C356 548 400 483 400 402C400 324 360 268 300 268Z" fill="#2C2620"/>
+
+  <!-- hair -->
+  <path d="M198 402C198 315 239 256 300 256C361 256 402 315 402 402C397 369 382 347 359 338C341 370 319 383 291 383C256 383 230 369 214 341C205 357 200 378 198 402Z" fill="#151210"/>
+
+  <!-- ears -->
+  <path d="M201 405C189 405 181 415 181 429C181 443 189 453 201 453" stroke="#453B32" stroke-width="7" stroke-linecap="round"/>
+  <path d="M399 405C411 405 419 415 419 429C419 443 411 453 399 453" stroke="#453B32" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- rim light -->
+  <path d="M388 334C408 360 418 391 418 426C418 468 405 504 383 530" stroke="url(#rim)" stroke-width="11" stroke-linecap="round" opacity="0.55"/>
+  <path d="M414 618C468 656 500 716 508 800" stroke="url(#rim)" stroke-width="7" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- collar detail -->
+  <path d="M250 616C266 640 282 652 300 652C318 652 334 640 350 616" stroke="url(#collar)" stroke-width="3"/>
+  <path d="M300 652V800" stroke="#161310" stroke-width="2" opacity="0.45"/>
+</svg>

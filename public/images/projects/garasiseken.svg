@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
+  <rect width="1200" height="900" fill="#1B1B19"/>
+
+  <!-- amber accent behind the browser -->
+  <circle cx="1120" cy="95" r="150" fill="#C69345"/>
+
+  <text x="70" y="72" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="4" fill="#F2F0EA">GARASISEKEN</text>
+  <text x="1130" y="72" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="3" fill="#8A8780">WEB DESIGN &amp; DEVELOPMENT — 2024</text>
+
+  <!-- browser -->
+  <rect x="90" y="120" width="1020" height="660" fill="#F1EFE9" stroke="#3B3A35"/>
+  <path d="M90 164H1110" stroke="#DCD8CE"/>
+  <circle cx="116" cy="143" r="4" fill="#1C1C1A" opacity="0.25"/>
+  <circle cx="132" cy="143" r="4" fill="#1C1C1A" opacity="0.18"/>
+  <circle cx="148" cy="143" r="4" fill="#1C1C1A" opacity="0.11"/>
+  <rect x="470" y="133" width="260" height="20" rx="10" fill="#E7E3D9"/>
+  <text x="600" y="147" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#77736B">garasiseken.id</text>
+
+  <!-- nav -->
+  <text x="130" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="1" fill="#1C1C1A">GS.</text>
+  <text x="1050" y="208" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing="2" fill="#77736B">SERVICES / WORKSHOP / CONTACT</text>
+
+  <!-- hero copy -->
+  <text x="130" y="302" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="-2" fill="#1C1C1A">Precision in</text>
+  <text x="130" y="362" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="-2" fill="#1C1C1A">every detail.</text>
+  <text x="130" y="400" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#77736B">Independent automotive workshop</text>
+
+  <rect x="130" y="428" width="152" height="42" fill="#1C1C1A"/>
+  <text x="206" y="453" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="2" fill="#F1EFE9">BOOK A VISIT</text>
+
+  <text x="130" y="516" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing="2" fill="#77736B">SERVICE / REPAIR / DETAILING</text>
+  <path d="M130 536H410" stroke="#DCD8CE"/>
+
+  <!-- workshop visual -->
+  <rect x="650" y="240" width="410" height="330" fill="#B08A4F"/>
+  <path d="M650 240H1060V330C1000 350 930 360 860 360C790 360 720 350 650 330V240Z" fill="#A37E45" opacity="0.65"/>
+  <text x="672" y="270" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing="2" fill="#F1EFE9">WORKSHOP / 01</text>
+
+  <!-- car silhouette -->
+  <path d="M700 470C714 424 748 398 798 392H902C952 398 986 424 1000 470V506H700V470Z" fill="#26241F"/>
+  <path d="M752 420C766 402 790 394 818 394H878C906 394 930 402 944 420L928 448H768L752 420Z" fill="#8A8478" opacity="0.45"/>
+  <circle cx="772" cy="508" r="36" fill="#141311"/>
+  <circle cx="772" cy="508" r="15" fill="#6F6B63"/>
+  <circle cx="952" cy="508" r="36" fill="#141311"/>
+  <circle cx="952" cy="508" r="15" fill="#6F6B63"/>
+  <path d="M676 552H1034" stroke="#6F6B63"/>
+  <text x="1034" y="545" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing="2" fill="#F1EFE9">GS — SERVICE</text>
+
+  <!-- service cards -->
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="130" y="590" width="280" height="132" fill="#FBFAF7" stroke="#E1DDD4"/>
+    <text x="150" y="618" font-size="8" letter-spacing="2" fill="#A09B90">01</text>
+    <text x="150" y="655" font-size="17" font-weight="700" fill="#1C1C1A">Diagnostics</text>
+    <text x="150" y="680" font-size="9" fill="#77736B">Engine, electrical, and fault tracing</text>
+
+    <rect x="440" y="590" width="280" height="132" fill="#FBFAF7" stroke="#E1DDD4"/>
+    <text x="460" y="618" font-size="8" letter-spacing="2" fill="#A09B90">02</text>
+    <text x="460" y="655" font-size="17" font-weight="700" fill="#1C1C1A">Repair</text>
+    <text x="460" y="680" font-size="9" fill="#77736B">Careful work with clear communication</text>
+
+    <rect x="750" y="590" width="280" height="132" fill="#FBFAF7" stroke="#E1DDD4"/>
+    <text x="770" y="618" font-size="8" letter-spacing="2" fill="#A09B90">03</text>
+    <text x="770" y="655" font-size="17" font-weight="700" fill="#1C1C1A">Detailing</text>
+    <text x="770" y="680" font-size="9" fill="#77736B">Finish, protection, and presentation</text>
+  </g>
+
+  <text x="70" y="870" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="2" fill="#8A8780">WEB DESIGN — REACT, TAILWIND CSS</text>
+  <text x="1130" y="870" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="2" fill="#8A8780">BUILD / 04</text>
+</svg>

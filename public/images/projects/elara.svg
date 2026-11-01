@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
+  <rect width="1200" height="900" fill="#E9E5DE"/>
+
+  <!-- ambient shapes -->
+  <circle cx="1000" cy="300" r="270" fill="#D8C9C1" opacity="0.55"/>
+  <circle cx="140" cy="800" r="190" fill="#B9C2AD" opacity="0.35"/>
+
+  <text x="70" y="72" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="4" fill="#1E1C19">ELARA</text>
+  <text x="1130" y="72" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="3" fill="#77736B">DIGITAL PRODUCT — 2025</text>
+
+  <!-- browser -->
+  <rect x="90" y="120" width="1020" height="660" fill="#FBFAF7" stroke="#1E1C19" stroke-width="1.5"/>
+  <path d="M90 164H1110" stroke="#E5E1D8"/>
+  <circle cx="116" cy="143" r="4" fill="#1E1C19" opacity="0.22"/>
+  <circle cx="132" cy="143" r="4" fill="#1E1C19" opacity="0.16"/>
+  <circle cx="148" cy="143" r="4" fill="#1E1C19" opacity="0.1"/>
+  <rect x="470" y="133" width="260" height="20" rx="10" fill="#F0EDE6"/>
+  <text x="600" y="147" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#8A857C">elara.studio</text>
+
+  <!-- left column -->
+  <text x="140" y="222" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="3" fill="#8A857C">WELLNESS STUDIO / DAILY RITUALS</text>
+  <text x="140" y="300" font-family="Georgia, 'Times New Roman', serif" font-size="76" fill="#1E1C19">Elara</text>
+  <text x="140" y="332" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="2.5" fill="#8A857C">A QUIETER WAY TO FEEL WELL</text>
+
+  <text x="140" y="412" font-family="Georgia, 'Times New Roman', serif" font-size="38" fill="#1E1C19">Space to</text>
+  <text x="140" y="456" font-family="Georgia, 'Times New Roman', serif" font-size="38" fill="#1E1C19">come back to.</text>
+  <text x="140" y="492" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#77736B">Classes, memberships, and daily rituals</text>
+  <text x="140" y="510" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#77736B">designed around your rhythm.</text>
+
+  <rect x="140" y="544" width="168" height="42" rx="21" fill="#1E1C19"/>
+  <text x="224" y="570" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="2" fill="#FBFAF7">BOOK A CLASS</text>
+
+  <!-- right visual -->
+  <rect x="612" y="214" width="452" height="438" fill="#D9CBC3"/>
+  <path d="M662 652V432C662 362 720 304 792 304C864 304 922 362 922 432V652H662Z" fill="#B79A92"/>
+  <circle cx="910" cy="332" r="62" fill="#8F9E86"/>
+  <path d="M662 540C730 505 790 505 850 540C890 564 918 596 930 630" stroke="#E3D6CF" stroke-width="1.5"/>
+  <path d="M612 214V652M1064 214V652" stroke="#C9B9B0" stroke-width="1"/>
+  <text x="636" y="626" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="2" fill="#6F5F59">SLOW FLOW — 07:30</text>
+  <text x="1040" y="238" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="2" fill="#6F5F59">01 / 04</text>
+
+  <!-- bottom cards -->
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="140" y="680" width="280" height="76" fill="#F3EFE7" stroke="#E5E1D8"/>
+    <text x="158" y="706" font-size="8" letter-spacing="2" fill="#8A857C">MON · 07:30</text>
+    <text x="158" y="729" font-size="14" font-weight="700" fill="#1E1C19">Slow Flow</text>
+
+    <rect x="440" y="680" width="280" height="76" fill="#F3EFE7" stroke="#E5E1D8"/>
+    <text x="458" y="706" font-size="8" letter-spacing="2" fill="#8A857C">WED · 18:00</text>
+    <text x="458" y="729" font-size="14" font-weight="700" fill="#1E1C19">Evening Reset</text>
+
+    <rect x="740" y="680" width="280" height="76" fill="#F3EFE7" stroke="#E5E1D8"/>
+    <text x="758" y="706" font-size="8" letter-spacing="2" fill="#8A857C">SAT · 09:00</text>
+    <text x="758" y="729" font-size="14" font-weight="700" fill="#1E1C19">Studio Practice</text>
+  </g>
+
+  <text x="70" y="870" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="2" fill="#77736B">PRODUCT DESIGN — DESIGN SYSTEM, WEB APP</text>
+  <text x="1130" y="870" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="2" fill="#77736B">CONCEPT / 02</text>
+</svg>

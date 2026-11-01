@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
+  <rect width="1200" height="900" fill="#EDE9E0"/>
+
+  <text x="70" y="72" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="4" fill="#22271F">MEATMAP</text>
+  <text x="1130" y="72" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="3" fill="#77746B">UI/UX DESIGN — 2025</text>
+
+  <!-- map panel -->
+  <rect x="70" y="115" width="630" height="710" fill="#DDE1D2" stroke="#22271F" stroke-width="1.5"/>
+
+  <!-- map roads -->
+  <g stroke="#BCC3AD" stroke-width="2">
+    <path d="M70 255H700"/>
+    <path d="M70 420H700"/>
+    <path d="M70 610H700"/>
+    <path d="M205 115V825"/>
+    <path d="M425 115V825"/>
+    <path d="M570 115V825"/>
+  </g>
+  <g stroke="#C9CEBC" stroke-width="1">
+    <path d="M70 330H700"/>
+    <path d="M70 520H700"/>
+    <path d="M310 115V825"/>
+    <path d="M500 115V825"/>
+  </g>
+
+  <!-- highlighted zone -->
+  <circle cx="340" cy="470" r="86" fill="#C06B4A" opacity="0.1"/>
+  <circle cx="340" cy="470" r="86" stroke="#C06B4A" stroke-opacity="0.35" stroke-dasharray="4 6"/>
+
+  <!-- route -->
+  <path d="M150 720C250 650 230 520 340 470C450 420 520 390 600 300" stroke="#7C8B6A" stroke-width="4" stroke-dasharray="10 12" stroke-linecap="round"/>
+
+  <!-- pins -->
+  <circle cx="600" cy="300" r="12" fill="#22271F"/>
+  <circle cx="600" cy="300" r="4" fill="#F8F5EC"/>
+  <circle cx="150" cy="720" r="12" fill="#22271F"/>
+  <circle cx="150" cy="720" r="4" fill="#F8F5EC"/>
+  <circle cx="340" cy="470" r="19" fill="#C06B4A"/>
+  <circle cx="340" cy="470" r="7" fill="#F8F5EC"/>
+
+  <!-- search card -->
+  <rect x="100" y="150" width="250" height="76" fill="#F8F5EC" stroke="#22271F"/>
+  <text x="120" y="181" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#22271F">Find your cut</text>
+  <text x="120" y="203" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#77746B">Local suppliers, nearby</text>
+
+  <!-- legend -->
+  <rect x="100" y="730" width="260" height="70" fill="#F8F5EC" stroke="#22271F"/>
+  <text x="120" y="757" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="2" fill="#77746B">NEARBY SUPPLIERS</text>
+  <text x="120" y="781" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#22271F">Within 3 km</text>
+
+  <!-- phone -->
+  <rect x="765" y="140" width="330" height="685" rx="42" fill="#171717"/>
+  <rect x="783" y="158" width="294" height="649" rx="28" fill="#F8F5EC"/>
+  <rect x="884" y="170" width="92" height="7" rx="3.5" fill="#171717"/>
+
+  <text x="805" y="218" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#171717">Nearby cuts</text>
+  <text x="1057" y="218" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing="1.5" fill="#8A8578">12 SHOPS</text>
+
+  <rect x="805" y="238" width="250" height="40" rx="20" fill="#EAE5D9"/>
+  <circle cx="824" cy="258" r="6" stroke="#8A8578" stroke-width="1.6"/>
+  <path d="M828 263L833 268" stroke="#8A8578" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="842" y="262" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#8A8578">Search cuts or shops</text>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="9">
+    <rect x="805" y="292" width="52" height="24" rx="12" fill="#171717"/>
+    <text x="831" y="308" text-anchor="middle" fill="#F8F5EC">All</text>
+    <rect x="865" y="292" width="58" height="24" rx="12" fill="#EAE5D9"/>
+    <text x="894" y="308" text-anchor="middle" fill="#6B675D">Beef</text>
+    <rect x="931" y="292" width="70" height="24" rx="12" fill="#EAE5D9"/>
+    <text x="966" y="308" text-anchor="middle" fill="#6B675D">Poultry</text>
+    <rect x="1009" y="292" width="46" height="24" rx="12" fill="#EAE5D9"/>
+    <text x="1032" y="308" text-anchor="middle" fill="#6B675D">More</text>
+  </g>
+
+  <!-- supplier card 1 -->
+  <rect x="805" y="330" width="250" height="164" fill="#FFFFFF" stroke="#E3DDCF"/>
+  <rect x="813" y="338" width="234" height="88" fill="#C97A55"/>
+  <ellipse cx="930" cy="382" rx="62" ry="30" fill="#B55F3D"/>
+  <ellipse cx="930" cy="382" rx="34" ry="15" fill="#D18A67"/>
+  <text x="813" y="446" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717">Dry-aged ribeye</text>
+  <text x="813" y="462" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#77746B">Prime Cuts · 1.8 km</text>
+  <text x="1047" y="446" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#7C8B6A">OPEN</text>
+
+  <!-- supplier card 2 -->
+  <rect x="805" y="508" width="250" height="164" fill="#FFFFFF" stroke="#E3DDCF"/>
+  <rect x="813" y="516" width="234" height="88" fill="#8A9A72"/>
+  <ellipse cx="930" cy="560" rx="58" ry="28" fill="#75855E"/>
+  <ellipse cx="930" cy="560" rx="30" ry="13" fill="#A3B08B"/>
+  <text x="813" y="624" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717">Farm chicken</text>
+  <text x="813" y="640" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#77746B">Seken Farm · 2.4 km</text>
+  <text x="1047" y="624" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#7C8B6A">OPEN</text>
+
+  <!-- bottom nav -->
+  <path d="M805 730H1055" stroke="#E3DDCF"/>
+  <g fill="#171717">
+    <circle cx="842" cy="760" r="4"/>
+    <circle cx="913" cy="760" r="4" fill="#C9C3B6"/>
+    <circle cx="984" cy="760" r="4" fill="#C9C3B6"/>
+    <circle cx="1055" cy="760" r="4" fill="#C9C3B6"/>
+  </g>
+  <rect x="897" y="787" width="66" height="4" rx="2" fill="#171717" opacity="0.25"/>
+
+  <text x="70" y="870" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="2" fill="#77746B">MOBILE APP — RESEARCH, UI DESIGN, PROTOTYPE</text>
+  <text x="1130" y="870" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="2" fill="#77746B">CONCEPT / 01</text>
+</svg>
