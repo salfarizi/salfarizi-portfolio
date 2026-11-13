@@ -8,7 +8,7 @@ export const services = [
     number: "01",
     title: "UI/UX Design",
     description:
-      "Research-led interfaces that turn complex flows into clear, usable experiences — from early structure to polished screens.",
+      "Research-led interfaces that turn complex flows into clear, usable experiences from early structure to polished screens.",
     deliverables: ["Research", "User flows", "Wireframes", "UI design"],
   },
   {
@@ -31,5 +31,12 @@ export const services = [
     description:
       "Design-to-code implementation with React and Tailwind CSS, focused on responsive detail, motion, and accessibility.",
     deliverables: ["React", "Tailwind CSS", "Responsive UI", "Motion"],
+  },
+  {
+    number: "05",
+    title: "Video Editing",
+    description:
+      "Story-driven edits for campaigns, events, and social content from pacing and color grading to audio and motion transitions.",
+    deliverables: ["Video editing", "Color grading", "Videography", "Motion"],
   },
 ];

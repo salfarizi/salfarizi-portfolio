@@ -2,8 +2,8 @@ import { cn } from "../lib/cn";
 
 export const navLinks = [
   { label: "Work", href: "#work", count: "04", id: "work" },
-  { label: "Services", href: "#services", count: "04", id: "services" },
-  { label: "Experience", href: "#experience", count: "03", id: "experience" },
+  { label: "Services", href: "#services", count: "05", id: "services" },
+  { label: "Experience", href: "#experience", count: "06", id: "experience" },
   { label: "Contact", href: "#contact", count: null, id: "contact" },
 ];
 

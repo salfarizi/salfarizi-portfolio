@@ -14,12 +14,12 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-line">
-      <div className="section-shell flex flex-col gap-4 py-7 sm:flex-row sm:items-center sm:justify-between">
+      <div className="section-shell relative flex flex-col gap-4 py-7 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-[10px] uppercase tracking-[0.12em] text-secondary">
           © 2026 Salman Alfarizi. All rights reserved.
         </p>
 
-        <p className="text-[10px] uppercase tracking-[0.12em] text-muted">
+        <p className="text-[10px] uppercase tracking-[0.12em] text-muted sm:absolute sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:whitespace-nowrap">
           {profile.location}
         </p>
 

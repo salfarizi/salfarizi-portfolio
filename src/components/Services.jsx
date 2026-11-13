@@ -11,7 +11,7 @@ export default function Services() {
           index="02"
           label="Expertise"
           title="What I Do"
-          description="Four connected disciplines — one approach grounded in clarity, craft, and practical execution."
+          description="Five connected disciplines — one approach grounded in clarity, craft, and practical execution."
         />
 
         <div className="mt-12 border-t border-line lg:mt-16">

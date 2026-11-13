@@ -40,6 +40,7 @@ export const profile = {
     "Prototyping",
     "Visual Design",
     "Graphic Design",
+    "Video Editing",
     "Frontend Development",
   ],
 
@@ -48,6 +49,8 @@ export const profile = {
     "Affinity Designer",
     "Photoshop",
     "Illustrator",
+    "Premiere Pro",
+    "After Effects",
     "React",
     "Tailwind CSS",
     "AI-assisted design tools",
