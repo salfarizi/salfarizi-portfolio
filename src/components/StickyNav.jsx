@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import {
+  AnimatePresence,
+  motion,
+  useReducedMotion,
+  useScroll,
+  useSpring,
+} from "framer-motion";
 import { ArrowUpRight, Menu } from "lucide-react";
 import { profile } from "../data/profile";
 import { useActiveSection } from "../hooks/useActiveSection";
@@ -14,6 +20,12 @@ export default function StickyNav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const activeId = useActiveSection(SECTION_IDS);
   const reduceMotion = useReducedMotion();
+  const { scrollYProgress } = useScroll();
+  const progress = useSpring(scrollYProgress, {
+    stiffness: 140,
+    damping: 30,
+    restDelta: 0.001,
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,6 +79,14 @@ export default function StickyNav() {
                 </button>
               </div>
             </div>
+
+            {reduceMotion ? null : (
+              <motion.span
+                aria-hidden="true"
+                className="absolute inset-x-0 bottom-0 h-px origin-left bg-ink/50"
+                style={{ scaleX: progress }}
+              />
+            )}
           </motion.header>
         ) : null}
       </AnimatePresence>

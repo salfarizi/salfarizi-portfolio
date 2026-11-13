@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000" fill="none">
+  <rect width="1000" height="1000" fill="#efeeea"/>
+  <text x="44" y="58" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="4" fill="#171717">PLAYGROUND</text>
+  <text x="956" y="58" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="3" fill="#8a8a86">STUDY 03 — DEPTH</text>
+  <g stroke="#171717" fill="none">
+    <circle cx="500" cy="510" r="60" stroke-width="0.8" opacity="1"/>
+    <circle cx="500" cy="510" r="94" stroke-width="0.8" opacity="0.92"/>
+    <circle cx="500" cy="510" r="128" stroke-width="0.8" opacity="0.84"/>
+    <circle cx="500" cy="510" r="162" stroke-width="0.8" opacity="0.76"/>
+    <circle cx="500" cy="510" r="196" stroke-width="2" opacity="0.6799999999999999"/>
+    <circle cx="500" cy="510" r="230" stroke-width="0.8" opacity="0.6"/>
+    <circle cx="500" cy="510" r="264" stroke-width="0.8" opacity="0.52"/>
+    <circle cx="500" cy="510" r="298" stroke-width="0.8" opacity="0.43999999999999995"/>
+    <circle cx="500" cy="510" r="332" stroke-width="0.8" opacity="0.36"/>
+  </g>
+  <circle cx="500" cy="510" r="8" fill="#171717"/>
+  <path d="M500 120V900" stroke="#a0a0a0" stroke-width="0.8" stroke-dasharray="4 8"/>
+  <text x="500" y="945" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="3" fill="#8a8a86">ORBIT / 03</text>
+</svg>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowUpRight, Menu } from "lucide-react";
+import { ArrowUpRight, Download, Menu } from "lucide-react";
 import { profile } from "../data/profile";
 import Availability from "./Availability";
 import MobileMenu from "./MobileMenu";
@@ -15,7 +15,16 @@ export default function Navbar() {
 
         <NavLinks className="hidden lg:block" />
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3 sm:gap-4">
+          <a
+            href={profile.cv}
+            download
+            className="hidden items-center gap-1.5 text-[10px] font-medium uppercase tracking-[0.16em] text-secondary transition-colors duration-300 hover:text-ink md:inline-flex"
+            aria-label="Download CV (PDF)"
+          >
+            <Download size={12} strokeWidth={1.75} />
+            CV
+          </a>
           <a
             href={`mailto:${profile.email}?subject=Project%20inquiry`}
             className="btn-dark hidden sm:inline-flex"

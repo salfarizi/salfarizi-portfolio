@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { useLenis } from "lenis/react";
 import { ArrowUpRight, X } from "lucide-react";
 import { profile } from "../data/profile";
 import { useLockBodyScroll } from "../hooks/useLockBodyScroll";
@@ -27,7 +29,15 @@ const itemVariants = {
 export default function MobileMenu({ open, onClose }) {
   const reduceMotion = useReducedMotion();
   const closeRef = useRef(null);
+  const lenis = useLenis();
   useLockBodyScroll(open);
+
+  useEffect(() => {
+    if (!open) return undefined;
+
+    lenis?.stop();
+    return () => lenis?.start();
+  }, [open, lenis]);
 
   useEffect(() => {
     if (!open) return undefined;
@@ -48,11 +58,20 @@ export default function MobileMenu({ open, onClose }) {
     const target = document.querySelector(href);
 
     window.setTimeout(() => {
+      if (lenis) {
+        lenis.start();
+        lenis.scrollTo(target ?? href, {
+          duration: reduceMotion ? 0 : 1.05,
+          immediate: reduceMotion,
+        });
+        return;
+      }
+
       target?.scrollIntoView({
         behavior: reduceMotion ? "auto" : "smooth",
         block: "start",
       });
-    }, 40);
+    }, 60);
   };
 
   const ListTag = reduceMotion ? "ul" : motion.ul;
@@ -98,17 +117,13 @@ export default function MobileMenu({ open, onClose }) {
                     variants: listVariants,
                   })}
             >
-              {navLinks.map((link, index) => (
-                <ItemTag
-                  key={link.label}
-                  className="border-b border-line"
-                  {...(reduceMotion ? {} : { variants: itemVariants })}
-                >
-                  <a
-                    href={link.href}
-                    onClick={(event) => handleNavigate(event, link.href)}
-                    className="group flex items-center justify-between gap-4 py-5"
-                  >
+              {navLinks.map((link, index) => {
+                const isRoute = Boolean(link.route);
+                const className =
+                  "group flex items-center justify-between gap-4 py-5";
+
+                const content = (
+                  <>
                     <span className="flex items-baseline gap-4">
                       <span className="text-[9px] font-medium uppercase tracking-[0.2em] text-muted">
                         0{index + 1}
@@ -128,9 +143,31 @@ export default function MobileMenu({ open, onClose }) {
                         className="text-muted transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
                       />
                     )}
-                  </a>
-                </ItemTag>
-              ))}
+                  </>
+                );
+
+                return (
+                  <ItemTag
+                    key={link.label}
+                    className="border-b border-line"
+                    {...(reduceMotion ? {} : { variants: itemVariants })}
+                  >
+                    {isRoute ? (
+                      <Link to={link.href} onClick={onClose} className={className}>
+                        {content}
+                      </Link>
+                    ) : (
+                      <a
+                        href={link.href}
+                        onClick={(event) => handleNavigate(event, link.href)}
+                        className={className}
+                      >
+                        {content}
+                      </a>
+                    )}
+                  </ItemTag>
+                );
+              })}
             </ListTag>
 
             <div className="mt-auto pt-12">

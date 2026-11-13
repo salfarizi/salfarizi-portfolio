@@ -17,6 +17,10 @@ export const profile = {
   // Placeholder email — replace with the real address.
   email: "lssalman32@gmail.com",
 
+  // Downloadable CV. Replace the file at /public/cv/Salman-Alfarizi-CV.pdf
+  // whenever the CV is updated.
+  cv: "/cv/Salman-Alfarizi-CV.pdf",
+
   // The default is a designed placeholder. To use a real portrait:
   // 1. Add your transparent PNG/WebP to /public/images/profile.png
   // 2. Change the path below to "/images/profile.png"
@@ -26,10 +30,22 @@ export const profile = {
 
   // Placeholder social URLs — replace with real profile links.
   socials: [
-    { label: "Dribbble", icon: "dribbble", href: "https://dribbble.com/" },
-    { label: "Instagram", icon: "instagram", href: "https://instagram.com/" },
-    { label: "LinkedIn", icon: "linkedin", href: "https://linkedin.com/in/" },
-    { label: "Behance", icon: "behance", href: "https://behance.net/" },
+    { label: "Dribbble", icon: "dribbble", href: "https://dribbble.com/Salfarizi" },
+    {
+      label: "Instagram",
+      icon: "instagram",
+      href: "https://www.instagram.com/salfarizii",
+    },
+    {
+      label: "LinkedIn",
+      icon: "linkedin",
+      href: "https://www.linkedin.com/in/salfarizi/",
+    },
+    {
+      label: "Behance",
+      icon: "behance",
+      href: "https://www.behance.net/salmanalfarizi1",
+    },
   ],
 
   skills: [

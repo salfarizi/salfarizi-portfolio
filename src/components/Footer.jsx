@@ -1,11 +1,21 @@
 import { ArrowUp } from "lucide-react";
 import { useReducedMotion } from "framer-motion";
+import { useLenis } from "lenis/react";
 import { profile } from "../data/profile";
 
 export default function Footer() {
   const reduceMotion = useReducedMotion();
+  const lenis = useLenis();
 
   const scrollToTop = () => {
+    if (lenis) {
+      lenis.scrollTo(0, {
+        duration: reduceMotion ? 0 : 1.1,
+        immediate: reduceMotion,
+      });
+      return;
+    }
+
     window.scrollTo({
       top: 0,
       behavior: reduceMotion ? "auto" : "smooth",

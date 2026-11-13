@@ -9,19 +9,25 @@ restrained green availability accent.
 
 - **Editorial hero** — oversized outlined + solid name, centered portrait with
   grayscale-to-color hover (tap to toggle on touch), availability status, social
-  links, and a direct contact call to action.
+  links, downloadable CV, and a direct contact call to action.
 - **Selected works** — asymmetric desktop grid, grayscale project artwork that
-  reveals color on hover, and four full case-study routes.
+  reveals color on hover, a cursor-following preview on desktop, and four full
+  case-study routes.
 - **Case studies** — Overview, Background, Problem, Goals, Process, Wireframes,
   Final UI, and Outcome, plus next-project navigation.
+- **Playground** — a masonry gallery for photography, motion, and visual studies,
+  with support for native video players. Currently **unlisted** (reachable at
+  `/playground` but not linked in the navigation or sitemap).
 - **Supporting sections** — Services, Experience, About, Contact, and Footer.
-- **Navigation** — smooth anchor scrolling with a compact sticky nav, active
+- **Navigation** — Lenis inertial scrolling, scroll-linked parallax, a scroll
+  progress line, smooth anchor scrolling with a compact sticky nav, active
   section highlighting, and a full-screen mobile menu with scroll lock.
 - **Accessible & responsive** — semantic landmarks, visible focus styles,
   keyboard-operable portrait toggle, descriptive alt text, reduced-motion
   support, and layouts tested from 320 px to 1440 px.
 - **SEO ready** — title/description, canonical, Open Graph, Twitter card,
-  JSON-LD Person schema, and a custom favicon.
+  JSON-LD Person schema with `sameAs` links, sitemap, robots.txt, and a custom
+  favicon.
 
 ## Tech stack
 
@@ -30,7 +36,7 @@ restrained green availability accent.
 | Framework | React 19 |
 | Build tool | Vite 8 |
 | Styling | Tailwind CSS 4 (`@tailwindcss/vite`) |
-| Motion | Framer Motion |
+| Motion | Framer Motion + Lenis |
 | Icons | Lucide React + custom social SVGs |
 | Routing | React Router DOM 7 |
 | Font | Inter (Google Fonts) |
@@ -53,37 +59,47 @@ npm run preview  # preview the production build
 ```text
 public/
   favicon.svg
+  robots.txt, sitemap.xml
+  cv/Salman-Alfarizi-CV.pdf    # downloadable CV
   images/
     og-image.png, og-image.svg
     profile-placeholder.svg
     projects/                 # four SVG artworks (placeholders)
+    gallery/                  # six playground visuals (placeholders)
 src/
   components/                 # Navbar, Hero, Portrait, Works, Services,
-                              # Experience, About, Contact, Footer, etc.
+                              # Experience, About, Contact, Footer, SmoothScroll,
+                              # Parallax, etc.
   data/
-    profile.js                # name, email, socials, skills, tools, portrait
+    profile.js                # name, email, CV path, socials, skills, tools
     projects.js               # project cards + full case-study content
+    gallery.js                # playground entries
     experience.js             # experience entries
     services.js               # service entries
   hooks/
     usePageMeta.js            # per-route title + description
   pages/
     Home.jsx
+    Playground.jsx
     ProjectDetail.jsx
     NotFound.jsx
   styles/index.css            # Tailwind theme tokens + component styles
   App.jsx / main.jsx
 index.html                    # SEO, Open Graph, fonts, JSON-LD
+vercel.json                   # SPA rewrites for Vercel
 ```
 
 ## Customization
 
-### Profile, email, socials
+### Profile, email, socials, CV
 
 Edit `src/data/profile.js`. Replace the placeholder email and the four social
-URLs (`https://dribbble.com/`, `https://instagram.com/`, etc.) with real
-profiles. The availability text, location, description, skills, and tools also
-live there.
+URLs with real profiles. The availability text, location, description, skills,
+and tools also live there.
+
+The downloadable CV is served from `public/cv/Salman-Alfarizi-CV.pdf` and
+referenced through `profile.cv`. To update it, overwrite that file (keep the same
+name) or change the path in `profile.js`.
 
 ### Portrait
 
@@ -122,12 +138,21 @@ The current narrative copy is **placeholder content** written to demonstrate the
 template. Replace it with the real process and outcomes. Do not add metrics,
 client names, or testimonials unless they are verifiable.
 
+### Playground
+
+Edit `src/data/gallery.js`. Each entry supports `id`, `title`, `category`,
+`year`, `src`, `alt`, `ratio`, and an optional `type: "video"` plus `video`
+(MP4/WebM path) to render a native player using `src` as the poster.
+
+Replace the six placeholder studies in `public/images/gallery/` with real
+photography or motion stills (WebP/AVIF recommended).
+
 ### Services and experience
 
-- `src/data/services.js` — four services with deliverables.
-- `src/data/experience.js` — three roles with periods and descriptions.
+- `src/data/services.js` — five services with deliverables.
+- `src/data/experience.js` — six roles with periods and descriptions.
 
-The nav counts (`Work [04]`, `Services [04]`, `Experience [03]`) are defined in
+The nav counts (`Work [04]`, `Services [05]`, `Experience [06]`) are defined in
 `src/components/NavLinks.jsx`. Update them if you add or remove entries.
 
 ### Colors and type
@@ -149,9 +174,10 @@ switching abruptly at breakpoints.
 
 ### SEO, OG image, canonical URL
 
-Update `index.html` before deploying:
+The canonical, Open Graph, JSON-LD, `robots.txt`, and `sitemap.xml` URLs point to
+`salfarizi-portfolio.vercel.app`. Update all of them if the production domain
+changes. Also review:
 
-- `<link rel="canonical">` and `og:url` → production URL.
 - `og:image` / `twitter:image` → absolute URL to `images/og-image.png`.
 - Title, description, and JSON-LD details as needed.
 - `public/favicon.svg` — replace with your own mark if desired.
@@ -175,11 +201,9 @@ paths to `index.html` (otherwise a direct visit to `/work/meatmap` returns 404).
 /*  /index.html  200
 ```
 
-**Vercel** — add `vercel.json`:
-
-```json
-{ "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }] }
-```
+**Vercel** — `vercel.json` with the SPA rewrite is included. Change the
+`canonical`, Open Graph, JSON-LD, `robots.txt`, and `sitemap.xml` URLs if you
+deploy to a different domain.
 
 **GitHub Pages / subdirectory hosting** — set `base` in `vite.config.js` and a
 matching `basename` on `<BrowserRouter>` in `src/main.jsx`, then use a 404
@@ -208,6 +232,8 @@ site goes live:
 
 - Portrait artwork (`profile-placeholder.svg`).
 - Four project artworks in `public/images/projects/`.
+- Six playground visuals in `public/images/gallery/`.
+- The CV at `public/cv/Salman-Alfarizi-CV.pdf`.
 - Case-study narrative copy and experience periods/descriptions.
 - Email address and social profile URLs.
 - Canonical, Open Graph, and JSON-LD URLs.

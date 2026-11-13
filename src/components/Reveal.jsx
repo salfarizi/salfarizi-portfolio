@@ -25,10 +25,10 @@ export default function Reveal({
   return (
     <MotionTag
       className={className}
-      initial={{ opacity: 0, y }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once, margin: "0px 0px -12% 0px" }}
-      transition={{ duration: 0.75, delay, ease: EASE }}
+      initial={{ opacity: 0, y, filter: "blur(5px)" }}
+      whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+      viewport={{ once, margin: "0px 0px -10% 0px" }}
+      transition={{ duration: 0.9, delay, ease: EASE }}
     >
       {children}
     </MotionTag>

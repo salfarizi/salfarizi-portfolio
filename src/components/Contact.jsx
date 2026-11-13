@@ -1,4 +1,4 @@
-import { ArrowUpRight, Mail } from "lucide-react";
+import { ArrowUpRight, Download, Mail } from "lucide-react";
 import { profile } from "../data/profile";
 import Reveal from "./Reveal";
 import SocialLinks from "./SocialLinks";
@@ -33,10 +33,16 @@ export default function Contact() {
                 <p className="max-w-md text-base leading-relaxed text-secondary">
                   Let's create something meaningful together.
                 </p>
-                <a href={mailto} className="btn-dark mt-6">
-                  Let's Talk
-                  <ArrowUpRight size={13} strokeWidth={1.75} />
-                </a>
+                <div className="mt-6 flex flex-wrap items-center gap-3">
+                  <a href={mailto} className="btn-dark">
+                    Let's Talk
+                    <ArrowUpRight size={13} strokeWidth={1.75} />
+                  </a>
+                  <a href={profile.cv} download className="btn-outline">
+                    Download CV
+                    <Download size={13} strokeWidth={1.75} />
+                  </a>
+                </div>
               </div>
 
               <div className="lg:col-span-5 lg:col-start-8">

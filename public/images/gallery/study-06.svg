@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1125" viewBox="0 0 900 1125" fill="none">
+  <rect width="900" height="1125" fill="#efeeea"/>
+  <text x="44" y="58" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="4" fill="#171717">PLAYGROUND</text>
+  <text x="856" y="58" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="3" fill="#8a8a86">STUDY 06 — LIGHT</text>
+  <defs>
+    <radialGradient id="orb" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#a0a0a0"/>
+      <stop offset="1" stop-color="#171717"/>
+    </radialGradient>
+  </defs>
+  <circle cx="450" cy="520" r="280" fill="url(#orb)"/>
+  <circle cx="450" cy="520" r="280" stroke="#171717" stroke-width="1.5"/>
+  <rect x="70" y="70" width="760" height="985" stroke="#e5e5e5" stroke-width="1"/>
+  <text x="450" y="1055" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="3" fill="#8a8a86">LIGHT / 06</text>
+</svg>

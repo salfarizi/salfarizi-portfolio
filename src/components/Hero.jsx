@@ -1,7 +1,8 @@
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Download } from "lucide-react";
 import { profile } from "../data/profile";
 import Navbar from "./Navbar";
+import Parallax from "./Parallax";
 import Portrait from "./Portrait";
 import SocialLinks from "./SocialLinks";
 
@@ -83,7 +84,13 @@ export default function Hero() {
             animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
             transition={{ duration: 1.05, delay: 0.52, ease: EASE }}
           >
-            <Portrait className="h-[clamp(360px,56vh,600px)] w-[clamp(300px,94vw,520px)] lg:h-[clamp(480px,72vh,780px)] lg:w-[clamp(380px,44vw,640px)]" />
+            <Parallax
+              className="flex justify-center"
+              innerClassName="flex justify-center"
+              distance={32}
+            >
+              <Portrait className="h-[clamp(360px,56vh,600px)] w-[clamp(300px,94vw,520px)] lg:h-[clamp(480px,72vh,780px)] lg:w-[clamp(380px,44vw,640px)]" />
+            </Parallax>
           </motion.div>
 
           <p className="relative z-20 mt-2 text-center text-[9px] font-medium uppercase tracking-[0.24em] text-muted lg:hidden">
@@ -104,17 +111,27 @@ export default function Hero() {
               <p className="mt-3 max-w-[310px] text-[13px] leading-relaxed text-secondary">
                 {profile.description}
               </p>
-              <a
-                href="#contact"
-                className="group mt-6 inline-flex items-center gap-2 border-b border-ink pb-1 text-[10px] font-medium uppercase tracking-[0.16em] text-ink"
-              >
-                Let's Collaborate
-                <ArrowUpRight
-                  size={13}
-                  strokeWidth={1.75}
-                  className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                />
-              </a>
+              <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
+                <a
+                  href="#contact"
+                  className="group inline-flex items-center gap-2 border-b border-ink pb-1 text-[10px] font-medium uppercase tracking-[0.16em] text-ink"
+                >
+                  Let's Collaborate
+                  <ArrowUpRight
+                    size={13}
+                    strokeWidth={1.75}
+                    className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  />
+                </a>
+                <a
+                  href={profile.cv}
+                  download
+                  className="inline-flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.16em] text-secondary transition-colors duration-300 hover:text-ink"
+                >
+                  <Download size={12} strokeWidth={1.75} />
+                  Download CV
+                </a>
+              </div>
             </div>
 
             <div

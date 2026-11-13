@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
+import Parallax from "./Parallax";
 import Reveal from "./Reveal";
 
-export default function ProjectCard({ project, index = 0, className = "" }) {
+export default function ProjectCard({
+  project,
+  index = 0,
+  className = "",
+  onPreviewStart,
+  onPreviewEnd,
+}) {
   return (
     <Reveal className={className} delay={(index % 2) * 0.08}>
       <Link
@@ -10,18 +17,24 @@ export default function ProjectCard({ project, index = 0, className = "" }) {
         className="project-card group block"
         aria-label={`View the ${project.title} case study`}
         data-testid="project-card"
+        onPointerEnter={(event) => {
+          if (event.pointerType === "mouse") onPreviewStart?.(project, event);
+        }}
+        onPointerLeave={() => onPreviewEnd?.()}
       >
         <div className="relative overflow-hidden bg-[#ececec]">
-          <div className="aspect-[4/3] w-full">
-            <img
-              src={project.image}
-              alt={project.imageAlt}
-              className="project-image h-full w-full object-cover"
-              width={1200}
-              height={900}
-              loading="lazy"
-              decoding="async"
-            />
+          <div className="aspect-[4/3] w-full overflow-hidden">
+            <Parallax className="h-full w-full" distance={14} scale={1.1}>
+              <img
+                src={project.image}
+                alt={project.imageAlt}
+                className="project-image h-full w-full object-cover"
+                width={1200}
+                height={900}
+                loading="lazy"
+                decoding="async"
+              />
+            </Parallax>
           </div>
 
           <span className="absolute left-3 top-3 bg-ink px-2.5 py-1 text-[9px] font-medium uppercase tracking-[0.18em] text-white">
