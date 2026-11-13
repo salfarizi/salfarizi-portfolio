@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
+  <rect width="1200" height="900" fill="#efeeea"/>
+
+  <!-- frame -->
+  <rect x="40" y="40" width="1120" height="820" stroke="#e2e1dc" stroke-width="1"/>
+
+  <!-- corner ticks -->
+  <g stroke="#d7d6d0" stroke-width="1">
+    <path d="M40 96V40h56"/>
+    <path d="M1104 40h56v56"/>
+    <path d="M1160 804v56h-56"/>
+    <path d="M96 860H40v-56"/>
+  </g>
+
+  <!-- labels -->
+  <text x="76" y="86" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="4" fill="#171717">IMAGE PLACEHOLDER</text>
+  <text x="1124" y="86" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="3" fill="#8a8a86">PROJECT ARTWORK — 4:3</text>
+
+  <!-- ruled field -->
+  <g>
+    <rect x="150" y="230" width="900" height="1" fill="#d7d6d0" opacity="1"/>
+    <rect x="150" y="282" width="760" height="1" fill="#d7d6d0" opacity="1"/>
+    <rect x="150" y="334" width="620" height="1" fill="#d7d6d0" opacity="1"/>
+    <rect x="150" y="386" width="900" height="1" fill="#d7d6d0" opacity="1"/>
+    <rect x="150" y="438" width="760" height="1" fill="#171717" opacity="0.5"/>
+    <rect x="150" y="490" width="620" height="1" fill="#d7d6d0" opacity="1"/>
+    <rect x="150" y="542" width="900" height="1" fill="#d7d6d0" opacity="1"/>
+    <rect x="150" y="594" width="760" height="1" fill="#d7d6d0" opacity="1"/>
+    <rect x="150" y="646" width="620" height="1" fill="#d7d6d0" opacity="1"/>
+  </g>
+  <rect x="150" y="230" width="240" height="416" fill="#171717" opacity="0.04"/>
+  <text x="150" y="206" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="3" fill="#8a8a86">02 — RHYTHM</text>
+  <text x="1050" y="206" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="3" fill="#8a8a86">COMING SOON</text>
+
+  <!-- footer -->
+  <line x1="76" y1="792" x2="1124" y2="792" stroke="#e2e1dc" stroke-width="1"/>
+  <text x="76" y="824" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="3" fill="#8a8a86">ARTWORK PENDING</text>
+  <text x="1124" y="824" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="3" fill="#8a8a86">02 / 04</text>
+</svg>

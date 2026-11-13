@@ -15,9 +15,10 @@ export const projects = [
     description:
       "A mobile-first food discovery concept that helps people find local suppliers, butchers, and specialty cuts nearby.",
     tags: ["Mobile App", "Research", "UI Design", "Prototype"],
-    image: "/images/projects/meatmap.svg",
+    // Placeholder artwork — swap back to "/images/projects/meatmap.svg" anytime.
+    image: "/images/projects/placeholder-01.svg",
     imageAlt:
-      "MeatMap concept artwork showing a map interface and a mobile supplier discovery screen",
+      "Neutral placeholder artwork labelled 01 for the MeatMap project, pending final imagery",
     role: "Product Design, UI/UX",
     timeline: "Concept project",
     caseStudy: {
@@ -75,9 +76,10 @@ export const projects = [
     description:
       "A quiet, editorial digital product concept for a modern wellness studio — booking, membership, and daily rituals in one place.",
     tags: ["Product Design", "Design System", "Web App"],
-    image: "/images/projects/elara.svg",
+    // Placeholder artwork — swap back to "/images/projects/elara.svg" anytime.
+    image: "/images/projects/placeholder-02.svg",
     imageAlt:
-      "Elara concept artwork showing an editorial wellness studio interface on a desktop browser",
+      "Neutral placeholder artwork labelled 02 for the Elara project, pending final imagery",
     role: "Product Design, Design System",
     timeline: "Concept project",
     caseStudy: {
@@ -135,9 +137,10 @@ export const projects = [
     description:
       "A visual identity and editorial poster series for an independent publishing house focused on new voices in fiction.",
     tags: ["Brand Identity", "Editorial", "Typography"],
-    image: "/images/projects/novelya.svg",
+    // Placeholder artwork — swap back to "/images/projects/novelya.svg" anytime.
+    image: "/images/projects/placeholder-03.svg",
     imageAlt:
-      "Novelya editorial poster artwork with bold typography, a vermilion circle, and an off-white layout",
+      "Neutral placeholder artwork labelled 03 for the Novelya project, pending final imagery",
     role: "Art Direction, Graphic Design",
     timeline: "Identity & poster series",
     caseStudy: {
@@ -195,9 +198,10 @@ export const projects = [
     description:
       "A bold, high-contrast website for an independent automotive workshop, designed and built around clarity and craft.",
     tags: ["Web Design", "React", "Tailwind CSS"],
-    image: "/images/projects/garasiseken.svg",
+    // Placeholder artwork — swap back to "/images/projects/garasiseken.svg" anytime.
+    image: "/images/projects/placeholder-04.svg",
     imageAlt:
-      "GarasiSeken website concept artwork showing a dark automotive workshop layout with a browser mockup",
+      "Neutral placeholder artwork labelled 04 for the GarasiSeken project, pending final imagery",
     role: "Design & Frontend Development",
     timeline: "Website concept",
     caseStudy: {
