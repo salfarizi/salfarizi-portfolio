@@ -48,7 +48,7 @@ export default function About() {
                       className="flex items-baseline justify-between gap-4 border-b border-line py-2.5 text-[13px] text-ink/80"
                     >
                       <span>{skill}</span>
-                      <span className="text-[9px] tracking-[0.14em] text-muted">
+                      <span className="text-[10px] tracking-[0.14em] text-muted">
                         {String(index + 1).padStart(2, "0")}
                       </span>
                     </li>

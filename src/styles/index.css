@@ -7,8 +7,8 @@
   --color-canvas: #f3f3f3;
   --color-surface: #ffffff;
   --color-ink: #171717;
-  --color-secondary: #777777;
-  --color-muted: #a0a0a0;
+  --color-secondary: #5f5f5f;
+  --color-muted: #6f6f6f;
   --color-line: #e5e5e5;
   --color-status: #21b66f;
 
@@ -69,7 +69,7 @@
   }
 
   .eyebrow {
-    @apply text-[10px] font-medium uppercase tracking-[0.24em] text-muted;
+    @apply text-[11px] font-medium uppercase tracking-[0.24em] text-muted;
   }
 
   .btn-dark {
@@ -81,7 +81,7 @@
   }
 
   .meta-label {
-    @apply text-[10px] font-medium uppercase tracking-[0.2em] text-muted;
+    @apply text-[11px] font-medium uppercase tracking-[0.2em] text-muted;
   }
 }
 

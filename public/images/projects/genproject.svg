@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" fill="none">
+  <rect width="1200" height="675" fill="#EDEAE3"/>
+
+  <text x="64" y="64" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="4" fill="#1F211D">GENPROJECT</text>
+  <text x="1136" y="64" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="3" fill="#79776F">LOGO — BRAND SYSTEM</text>
+
+  <!-- modular mark: G built from one square stroke -->
+  <path d="M330 170H230V430H410V320H330" stroke="#1F211D" stroke-width="16" fill="none"/>
+  <rect x="330" y="320" width="80" height="110" fill="#D2663A"/>
+
+  <!-- wordmark -->
+  <text x="520" y="286" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="9" fill="#1F211D">GENPROJECT</text>
+  <text x="520" y="316" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="6" fill="#79776F">PROJECT STUDIO</text>
+
+  <!-- palette -->
+  <g>
+    <rect x="520" y="356" width="56" height="56" fill="#1F211D"/>
+    <rect x="588" y="356" width="56" height="56" fill="#D2663A"/>
+    <rect x="656" y="356" width="56" height="56" fill="#C9C4B8"/>
+    <rect x="724" y="356" width="56" height="56" fill="#EDEAE3" stroke="#D8D3C7"/>
+    <g font-family="Arial, Helvetica, sans-serif" font-size="7" letter-spacing="1" fill="#79776F">
+      <text x="520" y="432">INK</text>
+      <text x="588" y="432">SIGNAL</text>
+      <text x="656" y="432">STONE</text>
+      <text x="724" y="432">PAPER</text>
+    </g>
+  </g>
+
+  <!-- reversed application -->
+  <rect x="820" y="140" width="316" height="440" fill="#1F211D"/>
+  <text x="978" y="212" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="6" fill="#EDEAE3">GENPROJECT</text>
+  <text x="978" y="238" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing="5" fill="#79776F">PROJECT STUDIO</text>
+  <path d="M1006 330H946V450H1058V390H1006" stroke="#EDEAE3" stroke-width="9" fill="none"/>
+  <rect x="1006" y="390" width="52" height="60" fill="#D2663A"/>
+  <text x="978" y="522" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing="4" fill="#79776F">SYSTEM — ONE RULE, ONE ACCENT</text>
+</svg>

@@ -93,7 +93,7 @@ export default function Hero() {
             </Parallax>
           </motion.div>
 
-          <p className="relative z-20 mt-2 text-center text-[9px] font-medium uppercase tracking-[0.24em] text-muted lg:hidden">
+          <p className="relative z-20 mt-2 text-center text-[10px] font-medium uppercase tracking-[0.24em] text-muted lg:hidden">
             Tap portrait to reveal color
           </p>
 

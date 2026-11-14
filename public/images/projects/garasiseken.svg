@@ -1,69 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
-  <rect width="1200" height="900" fill="#1B1B19"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" fill="none">
+  <rect width="1200" height="675" fill="#1B1B19"/>
 
-  <!-- amber accent behind the browser -->
-  <circle cx="1120" cy="95" r="150" fill="#C69345"/>
+  <text x="64" y="64" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="4" fill="#F2F0EA">GARASISEKEN</text>
+  <text x="1136" y="64" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="3" fill="#8A8780">LOGO — BRAND IDENTITY</text>
 
-  <text x="70" y="72" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="4" fill="#F2F0EA">GARASISEKEN</text>
-  <text x="1130" y="72" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="3" fill="#8A8780">WEB DESIGN &amp; DEVELOPMENT — 2024</text>
+  <!-- primary mark -->
+  <circle cx="330" cy="300" r="72" stroke="#C69345" stroke-width="4"/>
+  <circle cx="330" cy="300" r="84" stroke="#C69345" stroke-opacity="0.22" stroke-width="1"/>
+  <text x="330" y="320" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" letter-spacing="2" fill="#F2F0EA">GS</text>
 
-  <!-- browser -->
-  <rect x="90" y="120" width="1020" height="660" fill="#F1EFE9" stroke="#3B3A35"/>
-  <path d="M90 164H1110" stroke="#DCD8CE"/>
-  <circle cx="116" cy="143" r="4" fill="#1C1C1A" opacity="0.25"/>
-  <circle cx="132" cy="143" r="4" fill="#1C1C1A" opacity="0.18"/>
-  <circle cx="148" cy="143" r="4" fill="#1C1C1A" opacity="0.11"/>
-  <rect x="470" y="133" width="260" height="20" rx="10" fill="#E7E3D9"/>
-  <text x="600" y="147" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#77736B">garasiseken.id</text>
+  <!-- wordmark -->
+  <text x="330" y="482" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" letter-spacing="10" fill="#F2F0EA">GARASISEKEN</text>
+  <text x="330" y="510" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="5" fill="#8A8780">AUTOMOTIVE WORKSHOP</text>
+  <path d="M200 534H460" stroke="#C69345" stroke-width="1"/>
 
-  <!-- nav -->
-  <text x="130" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="1" fill="#1C1C1A">GS.</text>
-  <text x="1050" y="208" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing="2" fill="#77736B">SERVICES / WORKSHOP / CONTACT</text>
+  <!-- sticker -->
+  <circle cx="700" cy="308" r="80" fill="#C69345"/>
+  <circle cx="700" cy="308" r="68" fill="none" stroke="#1B1B19" stroke-width="1" stroke-opacity="0.25"/>
+  <text x="700" y="324" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="44" fill="#1B1B19">GS</text>
 
-  <!-- hero copy -->
-  <text x="130" y="302" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="-2" fill="#1C1C1A">Precision in</text>
-  <text x="130" y="362" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="-2" fill="#1C1C1A">every detail.</text>
-  <text x="130" y="400" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#77736B">Independent automotive workshop</text>
+  <!-- light card -->
+  <rect x="810" y="208" width="326" height="150" fill="#F1EFE9"/>
+  <text x="838" y="286" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#1B1B19">GS</text>
+  <text x="896" y="272" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="4" fill="#1B1B19">GARASISEKEN</text>
+  <text x="896" y="292" font-family="Arial, Helvetica, sans-serif" font-size="7" letter-spacing="3" fill="#8A8780">AUTOMOTIVE WORKSHOP</text>
+  <path d="M838 316H1108" stroke="#DCD8CE"/>
+  <text x="838" y="338" font-family="Arial, Helvetica, sans-serif" font-size="7" letter-spacing="2" fill="#8A8780">SERVICE — REPAIR — RESTORATION</text>
 
-  <rect x="130" y="428" width="152" height="42" fill="#1C1C1A"/>
-  <text x="206" y="453" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="2" fill="#F1EFE9">BOOK A VISIT</text>
-
-  <text x="130" y="516" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing="2" fill="#77736B">SERVICE / REPAIR / DETAILING</text>
-  <path d="M130 536H410" stroke="#DCD8CE"/>
-
-  <!-- workshop visual -->
-  <rect x="650" y="240" width="410" height="330" fill="#B08A4F"/>
-  <path d="M650 240H1060V330C1000 350 930 360 860 360C790 360 720 350 650 330V240Z" fill="#A37E45" opacity="0.65"/>
-  <text x="672" y="270" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing="2" fill="#F1EFE9">WORKSHOP / 01</text>
-
-  <!-- car silhouette -->
-  <path d="M700 470C714 424 748 398 798 392H902C952 398 986 424 1000 470V506H700V470Z" fill="#26241F"/>
-  <path d="M752 420C766 402 790 394 818 394H878C906 394 930 402 944 420L928 448H768L752 420Z" fill="#8A8478" opacity="0.45"/>
-  <circle cx="772" cy="508" r="36" fill="#141311"/>
-  <circle cx="772" cy="508" r="15" fill="#6F6B63"/>
-  <circle cx="952" cy="508" r="36" fill="#141311"/>
-  <circle cx="952" cy="508" r="15" fill="#6F6B63"/>
-  <path d="M676 552H1034" stroke="#6F6B63"/>
-  <text x="1034" y="545" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing="2" fill="#F1EFE9">GS — SERVICE</text>
-
-  <!-- service cards -->
-  <g font-family="Arial, Helvetica, sans-serif">
-    <rect x="130" y="590" width="280" height="132" fill="#FBFAF7" stroke="#E1DDD4"/>
-    <text x="150" y="618" font-size="8" letter-spacing="2" fill="#A09B90">01</text>
-    <text x="150" y="655" font-size="17" font-weight="700" fill="#1C1C1A">Diagnostics</text>
-    <text x="150" y="680" font-size="9" fill="#77736B">Engine, electrical, and fault tracing</text>
-
-    <rect x="440" y="590" width="280" height="132" fill="#FBFAF7" stroke="#E1DDD4"/>
-    <text x="460" y="618" font-size="8" letter-spacing="2" fill="#A09B90">02</text>
-    <text x="460" y="655" font-size="17" font-weight="700" fill="#1C1C1A">Repair</text>
-    <text x="460" y="680" font-size="9" fill="#77736B">Careful work with clear communication</text>
-
-    <rect x="750" y="590" width="280" height="132" fill="#FBFAF7" stroke="#E1DDD4"/>
-    <text x="770" y="618" font-size="8" letter-spacing="2" fill="#A09B90">03</text>
-    <text x="770" y="655" font-size="17" font-weight="700" fill="#1C1C1A">Detailing</text>
-    <text x="770" y="680" font-size="9" fill="#77736B">Finish, protection, and presentation</text>
-  </g>
-
-  <text x="70" y="870" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="2" fill="#8A8780">WEB DESIGN — REACT, TAILWIND CSS</text>
-  <text x="1130" y="870" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="2" fill="#8A8780">BUILD / 04</text>
+  <!-- reversed card -->
+  <rect x="810" y="388" width="326" height="150" fill="#262623" stroke="#3B3A35"/>
+  <circle cx="852" cy="436" r="22" stroke="#C69345" stroke-width="2"/>
+  <text x="852" y="443" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#F2F0EA">GS</text>
+  <text x="892" y="432" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="#F2F0EA">GARASISEKEN</text>
+  <text x="892" y="452" font-family="Arial, Helvetica, sans-serif" font-size="7" letter-spacing="3" fill="#8A8780">AUTOMOTIVE WORKSHOP</text>
+  <path d="M838 494H1108" stroke="#3B3A35"/>
+  <text x="838" y="516" font-family="Arial, Helvetica, sans-serif" font-size="7" letter-spacing="2" fill="#8A8780">EST. 2024 — WORKSHOP IDENTITY</text>
 </svg>

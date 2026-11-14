@@ -6,8 +6,12 @@ import Hero from "../components/Hero";
 import Services from "../components/Services";
 import StickyNav from "../components/StickyNav";
 import Works from "../components/Works";
+import { siteMeta } from "../data/siteMeta";
+import { usePageMeta } from "../hooks/usePageMeta";
 
 export default function Home() {
+  usePageMeta(siteMeta.title, siteMeta.description);
+
   return (
     <>
       <a

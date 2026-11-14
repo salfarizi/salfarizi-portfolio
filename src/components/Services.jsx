@@ -31,7 +31,7 @@ export default function Services() {
                     <p className="max-w-md text-[13px] leading-relaxed text-secondary">
                       {service.description}
                     </p>
-                    <p className="mt-3 text-[9px] font-medium uppercase tracking-[0.16em] text-muted">
+                    <p className="mt-3 text-[10px] font-medium uppercase tracking-[0.16em] text-muted">
                       {service.deliverables.join(" · ")}
                     </p>
                   </div>

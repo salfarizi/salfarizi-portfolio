@@ -21,11 +21,11 @@ export const profile = {
   // whenever the CV is updated.
   cv: "/cv/Salman-Alfarizi-CV.pdf",
 
-  // The default is a designed placeholder. To use a real portrait:
-  // 1. Add your transparent PNG/WebP to /public/images/profile.png
-  // 2. Change the path below to "/images/profile.png"
-  // 3. Update portraitAlt with an accurate description.
-  portrait: "/images/foto salman.png",
+  // Optimized WebP export of the hero portrait (1254×1254, ~100 KB).
+  // To update it, export a transparent 1:1 WebP to /public/images/portrait.webp
+  // and keep the path below. If the image fails to load, Portrait.jsx falls
+  // back to /images/profile-placeholder.svg.
+  portrait: "/images/portrait.webp",
   portraitAlt: "Portrait of Salman Alfarizi",
 
   // Placeholder social URLs — replace with real profile links.

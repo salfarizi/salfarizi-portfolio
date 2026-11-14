@@ -53,6 +53,9 @@ export default function Portrait({ className = "" }) {
         src={src}
         alt={profile.portraitAlt}
         className="portrait-image h-full w-full object-contain object-bottom"
+        width={1254}
+        height={1254}
+        loading="eager"
         draggable="false"
         decoding="async"
         fetchPriority="high"
@@ -60,7 +63,7 @@ export default function Portrait({ className = "" }) {
       />
 
       <span
-        className="portrait-hint pointer-events-none absolute -right-7 top-1/2 hidden -translate-y-1/2 rotate-90 items-center gap-3 whitespace-nowrap text-[9px] font-medium uppercase tracking-[0.28em] text-muted lg:flex"
+        className="portrait-hint pointer-events-none absolute -right-7 top-1/2 hidden -translate-y-1/2 rotate-90 items-center gap-3 whitespace-nowrap text-[10px] font-medium uppercase tracking-[0.28em] text-muted lg:flex"
         aria-hidden="true"
       >
         <span className="h-px w-7 bg-line" />

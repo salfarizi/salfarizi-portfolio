@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { cn } from "../lib/cn";
 
 export const navLinks = [
-  { label: "Work", href: "#work", count: "04", id: "work" },
+  { label: "Work", href: "#work", count: "07", id: "work" },
   { label: "Services", href: "#services", count: "05", id: "services" },
   { label: "Experience", href: "#experience", count: "06", id: "experience" },
   { label: "Contact", href: "#contact", count: null, id: "contact" },

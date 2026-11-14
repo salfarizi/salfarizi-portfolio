@@ -90,15 +90,20 @@ export default function Works() {
                 transition={{ duration: 0.22, ease: EASE }}
               >
                 <div className="border border-line bg-surface p-2 shadow-canvas">
-                  <div className="aspect-[4/3] overflow-hidden bg-[#ececec]">
+                  <div className="aspect-[16/9] overflow-hidden bg-[#ececec]">
                     <img
                       src={active.image}
                       alt=""
-                      className="h-full w-full object-cover"
+                      className={`h-full w-full ${
+                        active.kind === "logo"
+                          ? "object-contain"
+                          : "object-cover"
+                      }`}
                     />
                   </div>
-                  <p className="mt-2 px-1 text-[9px] font-medium uppercase tracking-[0.16em] text-muted">
-                    {active.title} — {active.year}
+                  <p className="mt-2 px-1 text-[10px] font-medium uppercase tracking-[0.16em] text-muted">
+                    {active.title}
+                    {active.year ? ` — ${active.year}` : ""}
                   </p>
                 </div>
               </motion.div>

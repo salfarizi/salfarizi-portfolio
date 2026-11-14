@@ -9,7 +9,7 @@ export default function Availability({ className = "" }) {
       aria-label="Available for new projects — get in touch"
     >
       <span className="status-dot" aria-hidden="true" />
-      <span className="text-[9px] font-medium uppercase tracking-[0.16em] text-ink/75 transition-colors duration-300 group-hover:text-ink sm:text-[10px]">
+      <span className="text-[10px] font-medium uppercase tracking-[0.16em] text-ink/75 transition-colors duration-300 group-hover:text-ink">
         <span className="hidden sm:inline">{profile.availability}</span>
         <span className="sm:hidden">{profile.availabilityShort}</span>
       </span>

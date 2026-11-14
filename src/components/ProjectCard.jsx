@@ -23,25 +23,27 @@ export default function ProjectCard({
         onPointerLeave={() => onPreviewEnd?.()}
       >
         <div className="relative overflow-hidden bg-[#ececec]">
-          <div className="aspect-[4/3] w-full overflow-hidden">
+          <div className="aspect-[16/9] w-full overflow-hidden">
             <Parallax className="h-full w-full" distance={14} scale={1.1}>
               <img
                 src={project.image}
                 alt={project.imageAlt}
-                className="project-image h-full w-full object-cover"
-                width={1200}
-                height={900}
+                className={`project-image h-full w-full ${
+                  project.kind === "logo" ? "object-contain" : "object-cover"
+                }`}
+                width={project.imageWidth ?? 1200}
+                height={project.imageHeight ?? 675}
                 loading="lazy"
                 decoding="async"
               />
             </Parallax>
           </div>
 
-          <span className="absolute left-3 top-3 bg-ink px-2.5 py-1 text-[9px] font-medium uppercase tracking-[0.18em] text-white">
+          <span className="absolute left-3 top-3 bg-ink px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.18em] text-white">
             0{index + 1}
           </span>
 
-          <span className="absolute bottom-3 right-3 hidden translate-y-1 items-center gap-2 bg-surface px-3 py-2 text-[9px] font-medium uppercase tracking-[0.16em] text-ink opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 sm:inline-flex">
+          <span className="absolute bottom-3 right-3 hidden translate-y-1 items-center gap-2 bg-surface px-3 py-2 text-[10px] font-medium uppercase tracking-[0.16em] text-ink opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 sm:inline-flex">
             View project
             <ArrowUpRight size={12} strokeWidth={1.75} />
           </span>
@@ -54,16 +56,18 @@ export default function ProjectCard({
             </h3>
             <p className="mt-2 text-xs text-secondary">{project.category}</p>
           </div>
-          <span className="shrink-0 text-[10px] font-medium uppercase tracking-[0.16em] text-muted">
-            {project.year}
-          </span>
+          {project.year ? (
+            <span className="shrink-0 text-[10px] font-medium uppercase tracking-[0.16em] text-muted">
+              {project.year}
+            </span>
+          ) : null}
         </div>
 
         <p className="mt-3 max-w-md text-[13px] leading-relaxed text-secondary">
           {project.description}
         </p>
 
-        <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-[9px] font-medium uppercase tracking-[0.14em] text-muted">
+        <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] font-medium uppercase tracking-[0.14em] text-muted">
           {project.tags.map((tag, tagIndex) => (
             <span key={tag} className="inline-flex items-center gap-3">
               {tagIndex > 0 ? (

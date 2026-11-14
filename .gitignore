@@ -5,6 +5,9 @@ node_modules/
 dist/
 dist-ssr/
 
+# Generated project images (see scripts/optimize-images.mjs)
+public/images/projects/*.webp
+
 # Local env files
 .env
 .env.*

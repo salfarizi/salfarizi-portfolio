@@ -90,7 +90,59 @@ function WireframeFrame({ label, variant }) {
           </>
         ) : null}
       </div>
-      <figcaption className="mt-2 px-1 text-[9px] font-medium uppercase tracking-[0.16em] text-muted">
+      <figcaption className="mt-2 px-1 text-[10px] font-medium uppercase tracking-[0.16em] text-muted">
+        {label}
+      </figcaption>
+    </figure>
+  );
+}
+
+/**
+ * Exploration tiles for identity projects. Wireframe-style placeholders would
+ * misrepresent logo work, so these show abstract mark, wordmark, and
+ * application studies instead.
+ */
+function LogoStudyFrame({ label, variant }) {
+  return (
+    <figure className="border border-line bg-surface p-2">
+      <div className="flex aspect-[3/4] items-center justify-center overflow-hidden bg-[#f6f6f6] p-6">
+        {variant === 0 ? (
+          <svg viewBox="0 0 120 120" className="h-28 w-28" aria-hidden="true">
+            <circle
+              cx="60"
+              cy="60"
+              r="38"
+              fill="none"
+              stroke="#1b1b19"
+              strokeWidth="5"
+            />
+            <circle cx="60" cy="60" r="16" fill="#1b1b19" />
+          </svg>
+        ) : null}
+
+        {variant === 1 ? (
+          <svg viewBox="0 0 120 120" className="w-28" aria-hidden="true">
+            <rect x="14" y="38" width="92" height="10" fill="#1b1b19" />
+            <rect x="14" y="56" width="64" height="10" fill="#1b1b19" />
+            <rect
+              x="14"
+              y="74"
+              width="42"
+              height="10"
+              fill="#1b1b19"
+              opacity="0.35"
+            />
+          </svg>
+        ) : null}
+
+        {variant === 2 ? (
+          <div className="grid w-28 grid-cols-2 gap-2" aria-hidden="true">
+            <div className="aspect-square bg-[#1b1b19]" />
+            <div className="aspect-square border border-[#1b1b19] bg-white" />
+          </div>
+        ) : null}
+      </div>
+      <figcaption className="mt-2 px-1 text-[10px] font-medium uppercase tracking-[0.16em] text-muted">
         {label}
       </figcaption>
     </figure>
@@ -153,7 +205,8 @@ export default function ProjectDetail() {
           <header className="mt-10 grid gap-8 lg:grid-cols-12 lg:items-end lg:gap-8">
             <div className="lg:col-span-8">
               <p className="eyebrow">
-                {project.category} — {project.year}
+                {project.category}
+                {project.year ? ` — ${project.year}` : ""}
               </p>
               <h1 className="mt-4 text-[clamp(2.75rem,8.5vw,8.5rem)] font-semibold leading-[0.9] tracking-[-0.06em]">
                 {project.title}
@@ -164,7 +217,7 @@ export default function ProjectDetail() {
               <p className="text-sm leading-relaxed text-secondary">
                 {project.description}
               </p>
-              <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[9px] font-medium uppercase tracking-[0.14em] text-muted">
+              <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] font-medium uppercase tracking-[0.14em] text-muted">
                 {project.tags.map((tag, index) => (
                   <span key={tag} className="inline-flex items-center gap-3">
                     {index > 0 ? (
@@ -185,8 +238,8 @@ export default function ProjectDetail() {
               src={project.image}
               alt={project.imageAlt}
               className="h-auto w-full"
-              width={1200}
-              height={900}
+              width={project.imageWidth ?? 1200}
+              height={project.imageHeight ?? 675}
               loading="eager"
               decoding="async"
               fetchPriority="high"
@@ -249,7 +302,7 @@ export default function ProjectDetail() {
                       key={step.title}
                       className="grid gap-2 sm:grid-cols-[2rem_1fr] sm:gap-4"
                     >
-                      <span className="text-[9px] font-medium uppercase tracking-[0.16em] text-muted sm:pt-1">
+                      <span className="text-[10px] font-medium uppercase tracking-[0.16em] text-muted sm:pt-1">
                         0{index + 1}
                       </span>
                       <div>
@@ -265,27 +318,35 @@ export default function ProjectDetail() {
                 </ol>
               </CaseBlock>
 
-              <CaseBlock index="06" title="Wireframes">
+              <CaseBlock
+                index="06"
+                title={caseStudy.explorationTitle ?? "Wireframes"}
+              >
                 <div className="grid gap-3 sm:grid-cols-3">
-                  {caseStudy.wireframes.map((label, index) => (
-                    <WireframeFrame
-                      key={label}
-                      label={label}
-                      variant={index}
-                    />
-                  ))}
+                  {caseStudy.wireframes.map((label, index) => {
+                    const Frame =
+                      project.kind === "logo" ? LogoStudyFrame : WireframeFrame;
+
+                    return (
+                      <Frame key={label} label={label} variant={index} />
+                    );
+                  })}
                 </div>
               </CaseBlock>
 
-              <CaseBlock index="07" title="Final UI">
+              <CaseBlock index="07" title={caseStudy.finalTitle ?? "Final UI"}>
                 <figure>
                   <div className="border border-line bg-surface p-2">
                     <img
                       src={project.image}
-                      alt={`${project.title} final interface artwork`}
+                      alt={`${project.title} ${
+                        project.kind === "logo"
+                          ? "final logo artwork"
+                          : "final interface artwork"
+                      }`}
                       className="h-auto w-full"
-                      width={1200}
-                      height={900}
+                      width={project.imageWidth ?? 1200}
+                      height={project.imageHeight ?? 675}
                       loading="lazy"
                       decoding="async"
                     />
@@ -313,7 +374,8 @@ export default function ProjectDetail() {
                   {nextProject.title}
                 </h2>
                 <p className="mt-3 text-sm text-secondary">
-                  {nextProject.category} — {nextProject.year}
+                  {nextProject.category}
+                  {nextProject.year ? ` — ${nextProject.year}` : ""}
                 </p>
               </div>
               <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-line text-ink transition-colors duration-300 group-hover:border-ink group-hover:bg-ink group-hover:text-white">

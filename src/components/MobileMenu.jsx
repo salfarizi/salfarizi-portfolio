@@ -29,8 +29,12 @@ const itemVariants = {
 export default function MobileMenu({ open, onClose }) {
   const reduceMotion = useReducedMotion();
   const closeRef = useRef(null);
+  const menuRef = useRef(null);
+  const onCloseRef = useRef(onClose);
   const lenis = useLenis();
   useLockBodyScroll(open);
+
+  onCloseRef.current = onClose;
 
   useEffect(() => {
     if (!open) return undefined;
@@ -42,15 +46,46 @@ export default function MobileMenu({ open, onClose }) {
   useEffect(() => {
     if (!open) return undefined;
 
+    const previouslyFocused = document.activeElement;
+
     const handleKeyDown = (event) => {
-      if (event.key === "Escape") onClose();
+      if (event.key === "Escape") {
+        onCloseRef.current();
+        return;
+      }
+
+      if (event.key !== "Tab") return;
+
+      const focusable = menuRef.current?.querySelectorAll(
+        'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+      );
+
+      if (!focusable?.length) return;
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
     };
 
     document.addEventListener("keydown", handleKeyDown);
     closeRef.current?.focus();
 
-    return () => document.removeEventListener("keydown", handleKeyDown);
-  }, [open, onClose]);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+
+      // Return focus to the control that opened the menu.
+      if (previouslyFocused instanceof HTMLElement) {
+        previouslyFocused.focus();
+      }
+    };
+  }, [open]);
 
   const handleNavigate = (event, href) => {
     event.preventDefault();
@@ -81,6 +116,7 @@ export default function MobileMenu({ open, onClose }) {
     <AnimatePresence>
       {open ? (
         <motion.div
+          ref={menuRef}
           id="mobile-menu"
           role="dialog"
           aria-modal="true"
@@ -125,7 +161,7 @@ export default function MobileMenu({ open, onClose }) {
                 const content = (
                   <>
                     <span className="flex items-baseline gap-4">
-                      <span className="text-[9px] font-medium uppercase tracking-[0.2em] text-muted">
+                      <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-muted">
                         0{index + 1}
                       </span>
                       <span className="text-[clamp(2.1rem,9vw,3.4rem)] font-semibold leading-none tracking-[-0.045em]">
@@ -133,7 +169,7 @@ export default function MobileMenu({ open, onClose }) {
                       </span>
                     </span>
                     {link.count ? (
-                      <span className="text-[9px] font-medium uppercase tracking-[0.18em] text-muted">
+                      <span className="text-[10px] font-medium uppercase tracking-[0.18em] text-muted">
                         [{link.count}]
                       </span>
                     ) : (

@@ -36,7 +36,7 @@ function GalleryItem({ item, index }) {
           )}
 
           {item.type === "video" ? (
-            <span className="pointer-events-none absolute left-3 top-3 inline-flex items-center gap-1.5 bg-ink px-2.5 py-1 text-[9px] font-medium uppercase tracking-[0.16em] text-white">
+            <span className="pointer-events-none absolute left-3 top-3 inline-flex items-center gap-1.5 bg-ink px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.16em] text-white">
               <Play size={10} strokeWidth={2} />
               Motion
             </span>
@@ -51,7 +51,7 @@ function GalleryItem({ item, index }) {
             <p className="mt-2 text-[11px] text-secondary">{item.category}</p>
           </div>
           <div className="text-right">
-            <span className="block text-[9px] uppercase tracking-[0.16em] text-muted">
+            <span className="block text-[10px] uppercase tracking-[0.16em] text-muted">
               0{index + 1}
             </span>
             <span className="mt-1 block text-[10px] uppercase tracking-[0.16em] text-muted">
@@ -101,7 +101,7 @@ export default function Playground() {
               Small exercises in form, rhythm, and light — kept here so the
               thinking stays visible.
             </p>
-            <p className="mt-5 text-[9px] font-medium uppercase tracking-[0.16em] text-muted">
+            <p className="mt-5 text-[10px] font-medium uppercase tracking-[0.16em] text-muted">
               {gallery.length} studies · Updated 2026
             </p>
           </div>

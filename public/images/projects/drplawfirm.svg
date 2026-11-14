@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" fill="none">
+  <rect width="1200" height="675" fill="#F0EDE7"/>
+
+  <text x="64" y="64" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="4" fill="#1C2A3A">DRP LAW FIRM</text>
+  <text x="1136" y="64" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="3" fill="#7C7568">LOGO — BRAND IDENTITY</text>
+
+  <!-- primary lockup -->
+  <path d="M120 180H560" stroke="#B79A5B" stroke-width="2"/>
+  <text x="340" y="330" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="96" letter-spacing="6" fill="#1C2A3A">DRP</text>
+  <text x="340" y="372" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="9" fill="#B79A5B">LAW FIRM</text>
+  <path d="M120 398H560" stroke="#B79A5B" stroke-width="2"/>
+  <text x="340" y="444" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing="3" fill="#8C8577">ADVOCATES — CONSULTATION — LITIGATION</text>
+
+  <!-- application: dark -->
+  <rect x="650" y="180" width="150" height="340" fill="#1C2A3A"/>
+  <text x="725" y="352" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="40" letter-spacing="3" fill="#F0EDE7">DRP</text>
+  <text x="725" y="378" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="7" letter-spacing="5" fill="#B79A5B">LAW FIRM</text>
+  <path d="M681 398H769" stroke="#B79A5B" stroke-width="1"/>
+
+  <!-- application: light -->
+  <rect x="818" y="180" width="150" height="340" fill="#F7F5F0" stroke="#DDD7C9"/>
+  <path d="M849 236H937" stroke="#B79A5B" stroke-width="1"/>
+  <text x="893" y="352" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="40" letter-spacing="3" fill="#1C2A3A">DRP</text>
+  <text x="893" y="378" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="7" letter-spacing="5" fill="#8C8577">LAW FIRM</text>
+  <path d="M849 398H937" stroke="#DDD7C9"/>
+
+  <!-- application: gold -->
+  <rect x="986" y="180" width="150" height="340" fill="#B79A5B"/>
+  <text x="1061" y="352" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="40" letter-spacing="3" fill="#1C2A3A">DRP</text>
+  <text x="1061" y="378" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="7" letter-spacing="5" fill="#1C2A3A" fill-opacity="0.75">LAW FIRM</text>
+  <path d="M1017 398H1105" stroke="#1C2A3A" stroke-opacity="0.35"/>
+</svg>
